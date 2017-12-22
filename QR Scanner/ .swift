@@ -11,8 +11,11 @@ import AVFoundation
 
 
 class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+   
+    @IBOutlet weak var ConfirmationMessage: UILabel!
+    @IBOutlet weak var Banner: UILabel!
+    
 
-    @IBOutlet weak var square: UIImageView!
     var video = AVCaptureVideoPreviewLayer()
     
     override func viewDidLoad() {
@@ -46,7 +49,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         video.frame = view.layer.bounds
         view.layer.addSublayer(video)
         
-        self.view.bringSubview(toFront: square)
+        self.view.bringSubview(toFront: ConfirmationMessage)
+        self.view.bringSubview(toFront: Banner)
         
         session.startRunning()
         
@@ -59,12 +63,16 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             {
                 if object.type == AVMetadataObjectTypeQRCode
                 {
-                    let alert = UIAlertController(title: "QR CODE", message: object.stringValue, preferredStyle: .alert)
+                    var message = "\(object.stringValue)"
+                    var firstHalf = message.dropFirst(10)
+                    let finalString = firstHalf.dropLast(2)
+                    /*let alert = UIAlertController(title: "QR CODE", message: object.stringValue, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
                     alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: {(nil) in
                         UIPasteboard.general.string = object.stringValue}))
                     
-                    present(alert, animated: true, completion: nil)
+                    present(alert, animated: true, completion: nil) */
+                    ConfirmationMessage.text = " Student \(finalString) has checked in!"
                 }
             }
         }

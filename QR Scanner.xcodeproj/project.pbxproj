@@ -14,7 +14,6 @@
 		F4C729B31F96755D002C2955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C729B11F96755D002C2955 /* LaunchScreen.storyboard */; };
 		F4C729BE1F96755D002C2955 /* QR_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C729BD1F96755D002C2955 /* QR_ScannerTests.swift */; };
 		F4C729C91F96755D002C2955 /* QR_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C729C81F96755D002C2955 /* QR_ScannerUITests.swift */; };
-		F4DE75D21FA0F1F500AB298C /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4DE75D11FA0F1F500AB298C /* download.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		F4C729C41F96755D002C2955 /* QR ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C729C81F96755D002C2955 /* QR_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_ScannerUITests.swift; sourceTree = "<group>"; };
 		F4C729CA1F96755D002C2955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4DE75D11FA0F1F500AB298C /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = download.jpg; path = ../../../download.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 				F4C729AC1F96755D002C2955 /* Main.storyboard */,
 				F4C729AF1F96755D002C2955 /* Assets.xcassets */,
 				F4C729B11F96755D002C2955 /* LaunchScreen.storyboard */,
-				F4DE75D11FA0F1F500AB298C /* download.jpg */,
 				F4C729B41F96755D002C2955 /* Info.plist */,
 			);
 			path = "QR Scanner";
@@ -196,6 +193,7 @@
 				TargetAttributes = {
 					F4C729A41F96755D002C2955 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 96L2Y94678;
 						ProvisioningStyle = Automatic;
 					};
 					F4C729B81F96755D002C2955 = {
@@ -238,7 +236,6 @@
 				F4C729B31F96755D002C2955 /* LaunchScreen.storyboard in Resources */,
 				F4C729B01F96755D002C2955 /* Assets.xcassets in Resources */,
 				F4C729AE1F96755D002C2955 /* Main.storyboard in Resources */,
-				F4DE75D21FA0F1F500AB298C /* download.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96L2Y94678;
 				INFOPLIST_FILE = "QR Scanner/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -431,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96L2Y94678;
 				INFOPLIST_FILE = "QR Scanner/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
