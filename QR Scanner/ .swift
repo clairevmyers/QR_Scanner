@@ -56,7 +56,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         
     }
     
-    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from coqnnection: AVCaptureConnection!) {
         if metadataObjects != nil && metadataObjects.count != 0
         {
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject
@@ -72,7 +72,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                         UIPasteboard.general.string = object.stringValue}))
                     
                     present(alert, animated: true, completion: nil) */
-                    ConfirmationMessage.text = " Student \(finalString) has checked in!"
+                    ConfirmationMessage.text = "    \(finalString)"
                 }
             }
         }
